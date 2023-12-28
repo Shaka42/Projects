@@ -1,0 +1,53 @@
+ a = a.split(" ")
+    b = b.split(" ")
+    if c is None:
+        hour = int(a[0]) + int(b[0])
+        minute = int(a[2]) + int(b[2])
+        print(hour,minute)
+        a = Time_calculator(hour,minute,a[3])
+        if a.minute >= 60:
+            a.minute = a.minute - 60
+            a.minute = str(minute).zfill(2)
+            add_hour = 1
+            a.add_time2()
+            a.changewithdayslater(9)
+            '''if hour > 24:
+                while hour > 24:
+                    hour = hour - 24
+                    count += 1
+                    continue
+                print(hour,count)
+                if hour > 12:
+                    hour = hour - 12
+                    hour = hour + add_hour
+                    hour = str(hour).zfill(2)
+                    print(hour, minute)
+                    if a[3] == 'AM':
+                        a[3] = 'PM'
+                        print("Return:", hour + ':' + minute, a[3], '(', count, 'days later )')
+                    if a[3] == 'PM':
+                        a[3] = 'AM'
+                        print("Return:", hour + ':' + minute, a[3], '(', count, 'days later )')
+                else:
+                    hour = str(hour).zfill(2)
+                    print(hour, minute)
+                    if a[3] == 'AM':
+                        a[3] = 'PM'
+                        print("Return:",hour+':'+minute,a[3],'(',count,'days later )')
+                    if a[3] == 'PM':
+                        a[3] = 'AM'
+                        print("Return:",hour+':'+minute,a[3],'(',count,'days later )')
+            if int(hour) > 12:
+                hour = hour - 12
+                hour = hour + add_hour
+                hour = str(hour).zfill(2)
+                print(hour, minute)
+                if a[3] == 'AM':
+                    a[3] = 'PM'
+                    print("Return:",hour+':'+minute,a[3])
+                if a[3] == 'PM':
+                    a[3] = 'AM'
+                    print("Return:",hour+':'+minute,a[3])'''
+
+
+
